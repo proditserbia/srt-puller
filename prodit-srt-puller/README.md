@@ -12,5 +12,5 @@ FFmpeg-based SRT puller sidecar for OvenMediaEngine (OME) 0.19 with GPU (NVENC) 
 1. Clone the repo:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/prodit-srt-puller.git
+git clone https://github.com/proditserbia/prodit-srt-puller.git
 cd prodit-srt-puller
