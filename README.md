@@ -32,18 +32,16 @@ Ideal for production SRT ingest → GPU transcoding → HLS / LL-HLS / SRT outpu
 prodit-srt-puller/
 │
 ├── docker-compose.yml         # OME + SRT puller stack
-├── Dockerfile.ome             # CUDA/NVENC-enabled OME build
 │
 ├── srt-puller/
 │   ├── entrypoint.sh          # FFmpeg auto-restart puller
 │   ├── Dockerfile             # Alpine/FFmpeg image
-│   ├── healthcheck.sh         # Validates incoming/outgoing SRT
+│   ├── .env.example
 │
 ├── ome/
 │   ├── Server.xml             # NVENC-enabled OME config
-│   ├── Logger.xml
+│   ├── Dockerfile             # CUDA/NVENC-enabled OME build
 │
-├── .env.example
 └── README.md
 ```
 
