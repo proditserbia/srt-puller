@@ -165,13 +165,7 @@
                             </Playlist>
 
                             <Encodes>
-                                <!-- BYPASS VIDEO -->
-                                <Video>
-                                    <Name>bypass_video</Name>
-                                    <Bypass>true</Bypass>
-                                </Video>
-
-                                <!-- AUDIO: AAC -->
+                                <!-- AUDIO: AAC ONLY -->
                                 <Audio>
                                     <Name>aac_audio</Name>
                                     <Codec>aac</Codec>
@@ -182,19 +176,7 @@
                                         <Codec>eq</Codec>
                                     </BypassIfMatch>
                                 </Audio>
-
-                                <!-- AUDIO: OPUS (opcionalno, može ostati) -->
-                                <Audio>
-                                    <Name>opus_audio</Name>
-                                    <Codec>opus</Codec>
-                                    <Bitrate>128000</Bitrate>
-                                    <Samplerate>48000</Samplerate>
-                                    <Channel>2</Channel>
-                                    <BypassIfMatch>
-                                        <Codec>eq</Codec>
-                                    </BypassIfMatch>
-                                </Audio>
-
+                            
                                 <!-- VIDEO LADDER – NVENC -->
                                 <!-- 1080p -->
                                 <Video>
@@ -203,12 +185,12 @@
                                     <Bitrate>6000000</Bitrate>
                                     <Width>1920</Width>
                                     <Height>1080</Height>
-                                    <Framerate>30</Framerate>
-                                    <KeyFrameInterval>60</KeyFrameInterval>
+                                    <Framerate>25</Framerate>
+                                    <KeyFrameInterval>50</KeyFrameInterval>
                                     <BFrames>0</BFrames>
                                     <Preset>faster</Preset>
                                 </Video>
-
+                            
                                 <!-- 720p -->
                                 <Video>
                                     <Name>video_720</Name>
@@ -216,12 +198,12 @@
                                     <Bitrate>3000000</Bitrate>
                                     <Width>1280</Width>
                                     <Height>720</Height>
-                                    <Framerate>30</Framerate>
-                                    <KeyFrameInterval>60</KeyFrameInterval>
+                                    <Framerate>25</Framerate>
+                                    <KeyFrameInterval>50</KeyFrameInterval>
                                     <BFrames>0</BFrames>
                                     <Preset>faster</Preset>
                                 </Video>
-
+                            
                                 <!-- 512p -->
                                 <Video>
                                     <Name>video_512</Name>
@@ -229,8 +211,8 @@
                                     <Bitrate>1500000</Bitrate>
                                     <Width>912</Width>
                                     <Height>512</Height>
-                                    <Framerate>30</Framerate>
-                                    <KeyFrameInterval>60</KeyFrameInterval>
+                                    <Framerate>25</Framerate>
+                                    <KeyFrameInterval>50</KeyFrameInterval>
                                     <BFrames>0</BFrames>
                                     <Preset>faster</Preset>
                                 </Video>
